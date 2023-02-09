@@ -1,0 +1,19 @@
+.btnContent {
+    width: 20%;
+    background-color: var(--glossy-grape);
+    border: none;
+    border-radius: 3px;
+    color: var(--ghost-white);
+    font-weight: 600;
+    transition: filter 0.5s;
+    text-transform: uppercase;
+
+    &:hover{
+        filter: brightness(1.1);
+    }
+
+    &:disabled{
+        opacity: 0.3;
+        cursor: wait;
+    }
+}

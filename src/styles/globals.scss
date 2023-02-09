@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ghost-white: #fbf9ff;
+    --glossy-grape: #AB92BF;
+    --purple-mountain: #9474AE;
+    --purple-navy: #655A7C;
+    --light-steel-blue: #AFC1D6;
+    --sage: #D6CA98;
+}
+
+body {
+    background-color: var(--light-cyan);
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

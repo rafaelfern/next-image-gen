@@ -1,0 +1,10 @@
+.title {
+    font-size: 2rem;
+    color: var(--purple-navy);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
