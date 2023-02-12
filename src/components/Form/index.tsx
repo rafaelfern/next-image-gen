@@ -2,17 +2,15 @@ import React, { useState } from 'react'
 import styles from './styles.module.scss'
 import BtnForm from './BtnForm'
 
-interface IProps {
+export interface IProps {
   desiredImgInput: string;
-  setDesiredImgInput: (e: any) => void;
+  setDesiredImgInput: (e: string) => void;
   getImage: () => void;
   disabled: boolean;
 }
 
 export default function Index({ desiredImgInput, setDesiredImgInput, getImage, disabled }: IProps) {
   
-  
-
   return (
     <div className={styles.formContent}>
       <input 
@@ -21,6 +19,7 @@ export default function Index({ desiredImgInput, setDesiredImgInput, getImage, d
         value={desiredImgInput} 
         onChange={e => setDesiredImgInput(e.target.value)}
         placeholder='Input any idea of image you want'
+        data-testid="input-prompt"
       />
       <BtnForm getImage={getImage} disabled={disabled}/>
     </div>

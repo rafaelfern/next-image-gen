@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './styles.module.scss';
-interface BtnProps {
+export interface BtnProps {
   getImage: () => void;
   disabled: boolean;
 }
@@ -12,6 +12,7 @@ export default function Index({ getImage, disabled }: BtnProps) {
       className={styles.btnContent}
       disabled={disabled}
       onClick={() => getImage()}
+      data-testid='btn-get'
     > Get Image </button>
   )
 }
