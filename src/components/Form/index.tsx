@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef } from 'react'
 import styles from './styles.module.scss'
 import BtnForm from './BtnForm'
 
@@ -11,9 +11,16 @@ export interface IProps {
 
 export default function Index({ desiredImgInput, setDesiredImgInput, getImage, disabled }: IProps) {
   
+  const inputRef = useRef(null)
+
+  // function handleClick() {
+  //   inputRef.current.focus();
+  // }
+
   return (
     <div className={styles.formContent}>
-      <input 
+      <input
+        ref={inputRef}
         type="text" 
         id="textInput" 
         value={desiredImgInput} 
