@@ -9,13 +9,8 @@ export interface IProps {
   disabled: boolean;
 }
 
-export default function Index({ desiredImgInput, setDesiredImgInput, getImage, disabled }: IProps) {
-  
+export default function Index({ desiredImgInput, setDesiredImgInput, getImage, disabled }: IProps) {  
   const inputRef = useRef(null)
-
-  // function handleClick() {
-  //   inputRef.current.focus();
-  // }
 
   return (
     <div className={styles.formContent}>

@@ -4497,6 +4497,11 @@ react-loading-indicators@^0.0.11:
   resolved "https://registry.yarnpkg.com/react-loading-indicators/-/react-loading-indicators-0.0.11.tgz#b0ce116c75cbb4aef7da4f638cb5773b38e493c1"
   integrity sha512-ZG3u0APZ2mxh5BKWoBvqqd8cM8+xw2C6/72YgnZzmb6wvSDnupgRjMK/f2vBlmevtPMdeHleCwRqxoNRPiA+WQ==
 
+react-medium-image-zoom@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-5.1.2.tgz#ff13b8cf37e3348c36a2fc6deade84912fdad8ce"
+  integrity sha512-Lk9TDqd+vUpQVP77p45jXgh1LGjClLfyLJnTemCfpI+5Zp3X7MX7iGP5VmSdLGXy9mhdlZiByHOyp4Irf4N8vg==
+
 react@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
