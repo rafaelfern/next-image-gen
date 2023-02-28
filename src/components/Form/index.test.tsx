@@ -20,15 +20,21 @@ describe('Input Component', () => {
         const { getByTestId } = render(<Index {...inputProp}/>);
         
         const inputInp = getByTestId('input-prompt') 
-        expect(inputInp).toBeInTheDocument();
+        expect(inputInp).toBeInTheDocument()
+    });
+
+    it('should clear input when icon is clicked', () => {
+        const { getByTestId } = render(<Index {...inputProp}/>)
+        fireEvent.click(getByTestId('button-test'))
+        expect(setDesiredImgInput).toHaveBeenCalled()
     });
 
     it('Should update the value when the input is changed', () => {
-        const { getByTestId } = render(<Index {...inputProp}/>);
+        const { getByTestId } = render(<Index {...inputProp}/>)
 
-        const input = getByTestId('input-prompt');
+        const input = getByTestId('input-prompt')
 
-        fireEvent.change(input, { target: { value: 'test' } });
-        expect(input.value).toBe('A black cat');
+        fireEvent.change(input, { target: { value: 'test' } })
+        expect(input.value).toBe('A black cat')
     })
 })

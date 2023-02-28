@@ -24,6 +24,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/pages/api/generateImg.js", "src/components/Form/index.test.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/pages/api/generateImg.js", "src/components/Form/index.test.jsx", "src/components/Form/BtnForm/index.test.tsx", "src/interfaces/optsCards.js"],
   "exclude": ["node_modules"]
 }

@@ -22,7 +22,11 @@ export default function Index({ desiredImgInput, setDesiredImgInput, getImage, d
           placeholder='Input any idea of image you want'
           data-testid="input-prompt"
         />
-        <AiOutlineClose className={styles.closeIcon} onClick={() => setDesiredImgInput('')}/>
+        <AiOutlineClose 
+          className={styles.closeIcon} 
+          onClick={() => setDesiredImgInput('')}
+          data-testid="button-test"
+        />
       </div>
       <BtnForm getImage={getImage} disabled={disabled}/>
     </div>

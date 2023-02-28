@@ -6,6 +6,11 @@ import Form from '../components/Form'
 import Spinner from '../components/Spinner'
 // const ImageResult = lazy(() => import('../components/ImageResult'))
 import ImageResult from '../components/ImageResult'
+import OptsCards from '@/components/OptsCards'
+import { cards }  from '../mock/cards'
+import { IOptsCardsProps } from '@/interfaces/optsCards'
+import Image from 'next/image'
+import ollie from '../assets/DSC_0139.jpg'
 
 export default function Home() {
 
@@ -56,6 +61,13 @@ export default function Home() {
           getImage={getImage}
           disabled={disabled}
         />
+      </div>
+      <div className={styles.cardContainer}>
+        {
+          cards.map((el: IOptsCardsProps) => (
+            <OptsCards key={el.id} id={el.id} image={el.image} title={el.title} description={el.description} />
+          ))
+        }
       </div>
       {loading&&(
         <Spinner />

@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 export interface BtnProps {
   getImage: () => void;
   disabled: boolean;
+  onClick?: () => void;
 }
 
 export default function Index({ getImage, disabled }: BtnProps) {
