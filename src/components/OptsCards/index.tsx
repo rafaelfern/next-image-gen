@@ -7,7 +7,7 @@ export default function OptsCards({ id, image, title, description }: IOptsCardsP
   return (
     <div className={styles.cardContent}>
       <div className={styles.imgContent}>
-        <img src={image} alt="image options" width={250} height={250}/>
+        <img src={image} alt={title} width={250} height={250}/>
       </div>
       <div className={styles.descContent}>
         <span className={styles.titleCard}>{title}</span>
